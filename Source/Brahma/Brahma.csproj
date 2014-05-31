@@ -114,7 +114,7 @@
     <Compile Include="..\SolutionInfo.cs">
       <Link>Properties\SolutionInfo.cs</Link>
     </Compile>
-    <Compile Include="CommandQueue.cs" />
+    <Compile Include="Properties\CommandQueue.cs" />
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Buffer.cs" />
     <Compile Include="ComputeProvider.cs" />

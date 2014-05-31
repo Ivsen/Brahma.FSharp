@@ -82,8 +82,10 @@
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')" />
   <ItemGroup>
     <Compile Include="Full.fs" />
+    <Compile Include="QuotationsTransformerTests.fs" />
     <Compile Include="Translator.fs" />
-    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples\Brahma.Samples\Brahma.Helpers.csproj">

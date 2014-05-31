@@ -93,6 +93,9 @@ type FSQuotationToOpenCLTranslator() =
     let translate qExpr translatorOptions =
         let structs = CollectStructs qExpr
         let translatedStructs = structs.Keys |> Seq.map (Type.TransleteStructDecl dummyTypes)
+
+      //  let newAST = QuotationsTransformer.quontationTransformer qExpr translatorOptions
+
         //let qExpr = expand Map.empty qExpr
         let rec go expr vars =
             match expr with
